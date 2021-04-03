@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const { contact } = require("../models");
+const { Contact } = require("../models");
 
 router.post("/api/contacts", async (req, res) => {
   try {
     const { name, email, message } = req.body;
-    const contact = new Score({ name, email, message });
+    const contact = new Contact({ name, email, message });
 
     await contact.save();
 
