@@ -7,7 +7,7 @@ const routes = require("./routes/index");
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/contacts", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/contact", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
